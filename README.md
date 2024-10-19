@@ -1,24 +1,24 @@
 
-# Base image
-FROM python:3.12.6
+    # Base image
+    FROM python:3.12.6
 
-# Work directory
-WORKDIR /app
+    # Work directory
+    WORKDIR /app
 
-# Copy requirements.txt
-COPY requirements.txt .
+    # Copy requirements.txt
+    COPY requirements.txt .
 
-# Install dependencies
-RUN pip install -r requirements.txt
+    # Install dependencies
+    RUN pip install -r requirements.txt
 
-# Copy project files
-COPY . .
+    # Copy project files
+    COPY . .
 
-# Expose port
-EXPOSE 5000
+    # Expose port
+    EXPOSE 5000
 
-# Command to run the Django server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:5000"]
+    # Command to run the Django server
+    CMD ["python", "manage.py", "runserver", "0.0.0.0:5000"]
 
 
 
