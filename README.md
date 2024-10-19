@@ -22,9 +22,9 @@
 
 
 
-# build the dockerfile
-docker build -t myproject .
+    # build the dockerfile
+    docker build -t myproject .
 
 
-# run dockerfile
-docker run -p 5000:5000 --name myproject-container myproject
+    # run dockerfile
+    docker run -p 5000:5000 --name myproject-container myproject
