@@ -1,4 +1,4 @@
-# commands for docker file of django
+# Commands for docker file of django by Muhammad Saim
 
     FROM python:3.12.6
 
